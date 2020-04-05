@@ -15,3 +15,12 @@ To Run The App:
 This App once launched will show the following Home screen -
 
 ![Home screen of the App](SDG_App_Home.png)
+
+Known Issues:
+
+1. Slowness in loading the images on Home screen. This could be avoided with pre-buffering on splash screen.
+2. Non-uniform font styles
+3. No .env files as of now (hard-coded API urls)
+
+Possible improvements:
+1. Add AsyncStorage for caching images/data
