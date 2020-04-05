@@ -37,6 +37,8 @@ class GoalTile extends React.Component {
   render() {
     return (
       <TouchableOpacity
+        testID={this.props.index.toString()}
+        accessibilityLabel={this.props.index.toString()}
         style={{...styles(this.props).container}}
         onPress={() =>
           this.props.navigationActive
@@ -60,7 +62,8 @@ class GoalTile extends React.Component {
           />
           <ActivityIndicator
             style={{position: 'absolute', left: 0, right: 0, top: 0, bottom: 0}}
-            animating={this.state.imageLoading}></ActivityIndicator>
+            animating={this.state.imageLoading}
+          />
         </View>
       </TouchableOpacity>
     );

@@ -6,7 +6,7 @@ const Home = (props) => {
   return (
     <React.Fragment>
       <Header />
-      <Body />
+      <Body testID='body' />
     </React.Fragment>
   );
 };

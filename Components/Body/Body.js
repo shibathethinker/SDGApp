@@ -31,7 +31,7 @@ const Body = (props) => {
             'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT-AB6MivobdTLUEvAc9LNlkVQQSmc8VQafZjSIu-i_zZ_O-Peh&usqp=CAU',
         }}
         style={{width: '100%', height: '100%'}}>
-        <ScrollView contentContainerStyle={styles.scrollViewStyle}>
+        <ScrollView testID='scrollView' contentContainerStyle={styles.scrollViewStyle}>
           <View style={styles.scrollViewFirstItemStyle}>
             <Text style={styles.scrollViewFirstItemTextStyle}>
               17 GOALS TO TRANSFORM OUR WORLD
