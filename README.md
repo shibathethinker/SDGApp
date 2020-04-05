@@ -14,4 +14,4 @@ To Run The App:
 
 This App once launched will show the following Home screen -
 
-![Home screen of the App](C:\Users\USER\Downloads\SDG_App_Home.png)
+![Home screen of the App](SDG_App_Home.png)
