@@ -17,6 +17,6 @@ describe('Example', () => {
 
   it('clicking on back button should take to HOME screen', async () => {
     await element(by.text('Back')).tap();
-    await expect(element(by.id('goalHeader'))).toBeVisible();
+    await expect(element(by.text('THE GOALS'))).toBeVisible();
   });
 });
