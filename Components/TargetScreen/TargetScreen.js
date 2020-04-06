@@ -7,7 +7,7 @@ const TargetScreen = (props) => {
 
   const targetListToDisplay = targets.map((item, index) => {
     return (
-      <View style={styles.listItemStyle}>
+      <View key={index} style={styles.listItemStyle}>
         <Text>{item.code}</Text>
         <Text>{item.description}</Text>
       </View>
@@ -15,10 +15,13 @@ const TargetScreen = (props) => {
   });
 
   return (
-    <View style={{flex: 1}}>
+    <View testID="targetScreen" style={{flex: 1}}>
       <View style={styles.listHeaderStyle}>
         <Text>{description}</Text>
-        <Text style={{color: 'white', fontWeight: 'bold', fontSize: 20}}>
+        <Text
+          testID="targetHeader"
+          accessibilityLabel="targretHeader"
+          style={{color: 'white', fontWeight: 'bold', fontSize: 20}}>
           {'\n'}TARGETS
         </Text>
       </View>

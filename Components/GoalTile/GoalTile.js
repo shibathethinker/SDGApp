@@ -50,12 +50,12 @@ class GoalTile extends React.Component {
         <View style={{flex: 1}}>
           <Image
             style={{flex: 1}}
-            onLoadStart={() => {
-              this.setState({imageLoading: true});
-            }}
-            onLoadEnd={() => {
-              this.setState({imageLoading: false});
-            }}
+            // onLoadStart={() => {
+            // this.setState({imageLoading: true});
+            // }}
+            // onLoadEnd={() => {
+            //  this.setState({imageLoading: false});
+            // }}
             source={{
               uri: `https://sustainabledevelopment.un.org/content/images/E_SDG_Icons-${this.index}.jpg`,
             }}
