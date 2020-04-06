@@ -7,6 +7,12 @@ describe('Example', () => {
     await expect(element(by.id('scrollView'))).toBeVisible();
   });
 
+  it('clicking on SDG1 should not move to target screen', async () => {
+    const SDG1 = await element(by.id('1'));
+    await SDG1.tap();
+    await expect(element(by.id('targetScreen'))).toBeNotVisible();
+  });
+
   it('clicking on SDG13 should move to target screen', async () => {
     const scrollView = await element(by.id('scrollView'));
     await scrollView.scrollTo('bottom');
