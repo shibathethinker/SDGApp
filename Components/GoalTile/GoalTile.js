@@ -7,7 +7,9 @@ import {
   View,
   ActivityIndicator,
 } from 'react-native';
+import FastImage from 'react-native-fast-image';
 import {withNavigation} from 'react-navigation';
+import ProgressBar from 'react-native-image-progress';
 
 class GoalTile extends React.Component {
   constructor(props) {
@@ -48,8 +50,9 @@ class GoalTile extends React.Component {
             : null
         }>
         <View style={{flex: 1}}>
-          <Image
+          <FastImage
             style={{flex: 1}}
+            indicator={ProgressBar}
             // onLoadStart={() => {
             // this.setState({imageLoading: true});
             // }}
